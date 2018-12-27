@@ -15,7 +15,7 @@
             </div>
             <div class='email'>
                 <div>更多职位</div>
-                <p>联系方式：hr@ofo.so</p>
+                <p>联系方式：281421465@qq.com</p>
             </div>
 		</div>
 	</div>
@@ -23,19 +23,18 @@
 <script>
 	const docs = [{
 		title: '产品设计',
-		data1: '产品经理'
+		data1: '产品经理',
+		data2: 'UI设计师'
 	},{
 		title: '技术研发',
 		data1: '后端工程师',
-		data2: '硬件工程师',
-		data3: '嵌入式软件工程师',
-	},{
-		title: '品牌公关',
-		data1: 'PR经理'
+		data2: '前端工程师',
+		data3: '移动端工程师'
+
 	},{
 		title: '市场运营',
-		data1: '策略运营',
-		data2: '用户运营'
+		data1: '客户经理',
+		data2: '销售代表'
 	}];
 	export default {
 		name: 'shareContent',
@@ -127,7 +126,7 @@
 	#jobH3{
         @include fade-in;
         line-height: 86px;
-        top: 20%;
+        top: 25%;
         text-align: center;
         font-size: 45px;
         display: table-cell;
@@ -135,7 +134,7 @@
         animation: fadeIn 2s 0.5s ease both;
         position: absolute;
         font-weight: bold;
-        left: 38%;
+        left: 35%;
         z-index: 8;
         color: #ffffff;
 	}

@@ -3,7 +3,9 @@
         <div id="nav" class="col">
             <router-link class="logo" to='/' tag='div'>
                 <img src="/static/img/logo.png"/>
+
             </router-link>
+
             <div class="nav-item">
                 <ul>
                     <li @mouseover='addClass($event)' @mouseleave='rmClass($event)' v-for="item in navItems" @click="toLink(item.link,$event)">
@@ -20,11 +22,11 @@ const navItems = [{
     text: '首页',
     link: '/'
 },{
-    text: '关于我们',
-    link: '/about'
-},{
     text: '解决方案',
     link: '/share'
+},{
+    text: '关于我们',
+    link: '/about'
 },{
     text: '加入我们',
     link: '/job'
@@ -104,7 +106,6 @@ export default {
         color: white;
         cursor: pointer;
         font-size: 16px;
-        color: #fff;
         opacity: 0.8;
     }
     .selected {

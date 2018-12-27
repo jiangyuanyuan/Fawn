@@ -1,22 +1,20 @@
 ﻿<template>
-	<div class="swipe">
-		<swiper :options="swiperOption" >
-			<swiper-slide v-for="item in imgArr" :key='item.src'><img :src="item.src"/></swiper-slide>
-			<div class="swiper-pagination" slot="pagination"></div>
-		</swiper>
-	</div>
+  <div>
+    <h3 id='info'>软件<br>一站式解决方案</h3>
+    <div class="swipe">
+      <swiper :options="swiperOption" >
+        <swiper-slide v-for="item in imgArr" :key='item.src'><img :src="item.src"/></swiper-slide>
+        <div class="swiper-pagination" slot="pagination"></div>
+      </swiper>
+    </div>
+  </div>
+
 </template>
 
 <script>
 	import { swiper, swiperSlide } from 'vue-awesome-swiper'
 	const imgArr = [{
-		src:'/static/img/home_bg.png'
-	},{
 		src:'/static/img/home_bg2.png'
-	},{
-		src:'/static/img/home_bg3.jpg'
-	},{
-		src:'/static/img/home_bg4.jpg'
 	}];
 	export default {
 		name: 'swipe',
@@ -29,9 +27,8 @@
 				swiperOption: {
 					pagination: '.swiper-pagination',
 					paginationClickable: true,
-                    autoplay: 5000,
-                    height: 920,
-                    width: 1920
+                    autoplay: 5000
+
 				},
 				imgArr: imgArr
 			}
@@ -40,10 +37,21 @@
 </script>
 
 <style>
+  #info{
+    text-align: left;
+    position: absolute;
+    top: 16%;
+    left: 15%;
+    z-index: 8;
+    color: white;
+    font-size: 34px;
+    line-height: 130%;
+    animation: fadeIn 2s 0.5s ease both;
+  }
 	.swipe {
 		left: 0;
 		top: 0;
-		width: 1920px;
+		width: 100%;
 		margin: 0;
 		padding: 0;
 	}

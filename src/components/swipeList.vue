@@ -1,10 +1,17 @@
 ﻿<template>
-	<div class="list">
-		<swiper :options="swiperOption" >
-			<swiper-slide v-for="item in imgArr"><img :src="item.src"/></swiper-slide>
-			<div class="swiper-pagination" slot="pagination"></div>
-		</swiper>
-	</div>	
+
+  <div>
+    <h1>综合案例</h1>
+    <div class="list">
+
+      <swiper :options="swiperOption" >
+        <swiper-slide v-for="item in imgArr"><img :src="item.src"/></swiper-slide>
+        <div class="swiper-pagination" slot="pagination"></div>
+      </swiper>
+    </div>
+
+  </div>
+
 </template>
 
 <script>
