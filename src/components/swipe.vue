@@ -4,15 +4,15 @@
 			<swiper-slide v-for="item in imgArr" :key='item.src'><img :src="item.src"/></swiper-slide>
 			<div class="swiper-pagination" slot="pagination"></div>
 		</swiper>
-	</div>	
+	</div>
 </template>
 
 <script>
 	import { swiper, swiperSlide } from 'vue-awesome-swiper'
 	const imgArr = [{
-		src:'/static/img/home_bg.jpg'
+		src:'/static/img/home_bg.png'
 	},{
-		src:'/static/img/home_bg2.jpg'
+		src:'/static/img/home_bg2.png'
 	},{
 		src:'/static/img/home_bg3.jpg'
 	},{
@@ -30,7 +30,7 @@
 					pagination: '.swiper-pagination',
 					paginationClickable: true,
                     autoplay: 5000,
-                    height: 911,
+                    height: 920,
                     width: 1920
 				},
 				imgArr: imgArr
@@ -43,7 +43,7 @@
 	.swipe {
 		left: 0;
 		top: 0;
-		width: 100%;
+		width: 1920px;
 		margin: 0;
 		padding: 0;
 	}
