@@ -3,16 +3,16 @@
         <div class='address'>
             <div class='data'>
                 <img :src='src' />
-                <p>4001 507 507（周一至周日：7:00 - 24:00）</p>
-                <p>北京市海淀区北四环西路58号理想国际大厦11层</p>
+                <p>281421465@qq.com（周一至周日：7:00 - 24:00）</p>
+                <p>深圳市南山区科兴科技园A座1409</p>
             </div>
             <div class='link'>
-                <a id='github' href='https://github.com/rianran1993/ofo' target='_blank'/>
+                <a id='github' href='https://github.com/jiangyuanyuan' target='_blank'/>
                 <a id='wechat' href='javascript:;' @mouseover='show' @mouseleave='hide'/>
             </div>
         </div>
         <div class='company'>
-            <p>Copyright © 2017 ofo Inc. 保留所有权利。京公网安备 11010802022978号   |   公共事务邮箱  gr@ofo.so    商务合作邮箱  bdinchina@ofo.so</p>
+            <p>Copyright © 2017 Fawn Inc. 保留所有权利。  商务合作邮箱  281421465@qq.com</p>
         </div>
     </footer>
 </template>
@@ -23,15 +23,15 @@ export default {
     name: 'header',
     data () {
         return {
-            src: '/static/img/footer_logo.png'
+            src: '/static/img/logo.png'
         }
     },
     methods: {
         show () {
-            this.src = '/static/img/wx-qrcode.jpg';
+            this.src = '/static/img/wx-qrcode.png';
         },
         hide () {
-            this.src = '/static/img/footer_logo.png';
+            this.src = '/static/img/logo.png';
         }
     }
 }
@@ -50,7 +50,7 @@ export default {
         font-size: 12px;
         color: #a3a3a3;
         text-align: center;
-    }    
+    }
     .company {
         border-top: 1px solid #2b2b2b;
         font-size: 12px;
@@ -68,9 +68,9 @@ export default {
     .link{
         font-size: 12px;
         color: #a3a3a3;
-        text-align: center; 
+        text-align: center;
         position: relative;
-        top: 25%;        
+        top: 25%;
     }
     @mixin img-style{
         display: inline-block;
@@ -81,7 +81,7 @@ export default {
         background: url('/static/img/github.png');
         @include img-style;
         margin-right: 35px;
-    }    
+    }
     #wechat {
         background: url('/static/img/social_icon.png');
         @include img-style;

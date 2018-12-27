@@ -23,11 +23,8 @@ const navItems = [{
     text: '关于我们',
     link: '/about'
 },{
-    text: '大共享',
+    text: '解决方案',
     link: '/share'
-},{
-    text: '下载APP',
-    link: '/download'
 },{
     text: '加入我们',
     link: '/job'
@@ -161,6 +158,6 @@ export default {
 		 -moz-animation:navin .5s 0s ease both;
 		  -ms-animation:navin .5s 0s ease both;
 		   -o-animation:navin .5s 0s ease both;
-			  animation:navin .5s 0s ease both; 
+			  animation:navin .5s 0s ease both;
     }
 </style>
