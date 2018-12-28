@@ -40,7 +40,7 @@
 		name: 'shareContent',
 		data () {
 			return {
-				src: '/static/img/job.jpg',
+				src: '/static/img/job.png',
 				docs: docs
 			}
 		}
@@ -77,14 +77,14 @@
             font-size: 14px;
             color: #333333;
             border-radius: 30px;
-            cursor: pointer;   
+            cursor: pointer;
             &:hover {
                 background-color: #ffc107;
             };
             + p {
                 margin-top: 40px;
                 cursor: auto;
-            }       
+            }
         }
     }
     @mixin fade-in {
@@ -107,7 +107,7 @@
         @keyframes fadeIn{
             0%{opacity:0}
             100%{opacity:1}
-        }        
+        }
     }
     .jobList {
         width:100%;

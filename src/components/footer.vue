@@ -12,7 +12,7 @@
             </div>
         </div>
         <div class='company'>
-            <p>Copyright © 2017 Fawn Inc. 保留所有权利。  商务合作邮箱  281421465@qq.com</p>
+            <p>Copyright © 2017 beer-smart Inc. 保留所有权利。  商务合作邮箱  281421465@qq.com</p>
         </div>
     </footer>
 </template>
