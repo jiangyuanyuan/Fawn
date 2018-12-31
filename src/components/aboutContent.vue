@@ -1,7 +1,7 @@
 ﻿<template>
 	<div class='content'>
 		<div class='banner'>
-			<h3 id='about'>ofo 共享单车首创“单车共享”模式<br>是全球第一个无桩共享单车平台</h3>
+      <h2 id='about'>走在梦想的路上，总是那么有趣</h2>
 			<img :src='src' />
 		</div>
 		<div>
@@ -13,6 +13,21 @@
 				<p class='word'>{{item.p4}}</p>
 			</div>
 		</div>
+    <h1>加入我们</h1>
+    <div class='jobEmail'>
+      <div class='jobContainer'>
+        <div class='jobList' v-for='item in jobdocs'>
+          <h3>{{item.title}}</h3>
+          <p>{{item.data1}}</p>
+          <p>{{item.data2}}</p>
+          <p>{{item.data3}}</p>
+        </div>
+      </div>
+      <div class='email'>
+        <div>更多职位</div>
+        <p>联系方式：281421465@qq.com</p>
+      </div>
+    </div>
 	</div>
 </template>
 <script>
@@ -35,12 +50,28 @@
 		p3: '',
 		p4: ''
 	}];
+  const jobdocs = [{
+    title: '产品设计',
+    data1: '产品经理',
+    data2: 'UI设计师'
+  },{
+    title: '技术研发',
+    data1: '后端工程师',
+    data2: '前端工程师',
+    data3: '移动端工程师'
+
+  },{
+    title: '市场运营',
+    data1: '客户经理',
+    data2: '销售代表'
+  }];
 	export default {
 		name: 'shareContent',
 		data () {
 			return {
-				src: '/static/img/about.jpg',
-				docs: docs
+				src: '/static/img/share1.jpg',
+				docs: docs,
+        jobdocs:jobdocs
 			}
 		}
 	}
@@ -49,8 +80,8 @@
 	#about{
 		text-align: left;
 		position: absolute;
-		top: 16%;
-		left: 20%;
+		top: 56%;
+    left: 25%;
 		z-index: 8;
 		color: white;
 		font-size: 34px;
@@ -72,4 +103,58 @@
 			text-align: center;
 		}
 	}
+  .jobContainer {
+    display: flex;
+    justify-content: space-around;
+  }
+  .jobEmail {
+    margin: 60px 0 100px;
+    p {
+      display: block;
+      height: 24px;
+      line-height: 24px;
+      color: #b8b8b8;
+      font-size: 14px;
+      margin: 0;
+      padding: 0;
+      cursor: pointer;
+    }
+  }
+  .email {
+    margin-top: 40px;
+    div {
+      width: 134px;
+      height: 58px;
+      line-height: 58px;
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+      border: 1px solid #e5e5e5;
+      font-size: 14px;
+      color: #333333;
+      border-radius: 30px;
+      cursor: pointer;
+      &:hover {
+        background-color: #ffc107;
+      };
+      + p {
+        margin-top: 40px;
+        cursor: auto;
+      }
+    }
+  }
+  .jobList {
+    width:100%;
+    h3 {
+      font-size: 18px;
+      text-align: center;
+      color: #585858;
+      margin-bottom: 16px;
+    }
+    p {
+      &:hover{
+        color:#585858;
+      }
+    }
+  }
 </style>

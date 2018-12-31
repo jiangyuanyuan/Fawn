@@ -1,6 +1,6 @@
 ﻿<template>
-  <div>
-    <h3 id='info'>软件<br>一站式解决方案</h3>
+  <div >
+    <h1 id='info'>云计算 大数据 移动应用 小程序</h1>
     <div class="swipe">
       <swiper :options="swiperOption" >
         <swiper-slide v-for="item in imgArr" :key='item.src'><img :src="item.src"/></swiper-slide>
@@ -14,7 +14,7 @@
 <script>
 	import { swiper, swiperSlide } from 'vue-awesome-swiper'
 	const imgArr = [{
-		src:'/static/img/home_bg2.png'
+		src:'/static/img/share1.jpg'
 	}];
 	export default {
 		name: 'swipe',
@@ -40,11 +40,12 @@
   #info{
     text-align: left;
     position: absolute;
-    top: 16%;
-    left: 15%;
+    top: 40%;
+    left: 20%;
+    right: 15%;
     z-index: 8;
     color: white;
-    font-size: 34px;
+    font-size: 60px;
     line-height: 130%;
     animation: fadeIn 2s 0.5s ease both;
   }

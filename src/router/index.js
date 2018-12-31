@@ -16,8 +16,9 @@ export default new Router({
         path: '/',
         components: {
             header: header,
-			swipe: swipe,
+			      swipe: swipe,
             swipeList: swipeList,
+            shareContent: shareContent,
             footer: footer
         },
 		beforeEnter (to, from, next) {

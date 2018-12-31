@@ -2,7 +2,8 @@
     <header>
         <div id="nav" class="col">
             <router-link class="logo" to='/' tag='div'>
-                <img src="/static/img/logo.png"/>
+                <img id="logo_img" src="/static/img/logo.png"/>
+                <img id="logo_name" src="/static/img/logo_name.png"/>
 
             </router-link>
 
@@ -25,11 +26,8 @@ const navItems = [{
     text: '解决方案',
     link: '/share'
 },{
-    text: '关于我们',
+    text: '我们',
     link: '/about'
-},{
-    text: '加入我们',
-    link: '/job'
 }];
 import router from '../router';
 export default {
@@ -79,14 +77,29 @@ export default {
 		width: 100%;
 		height: 100%;
     }
+
     .logo {
-        width: 54px;
+        width: 200px;
         height: 54px;
-        position: relative;
         left: 15%;
-		top: 25%;
+		    top: 25%;
+        position: relative;
         cursor: pointer;
+
     }
+    #logo_img {
+      display: inline-block;
+      width: 54px;
+      height: 54px;
+      margin-right: 5px;
+    }
+    #logo_name{
+
+      display: inline-block;
+      width: 130px;
+      height: 44px;
+    }
+
     .nav-item {
         ul {
             list-style: none;
